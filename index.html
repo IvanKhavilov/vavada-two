@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="hr-HR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vavada Casino službena web stranica ⚡ Najbolji online kasino u Hrvatskoj. Ostvarite bonus bez depozita od €920 i 100 besplatnih okretaja."
+    />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <title>Vavada Casino Hrvatska ❤️ Službena stranica i bonus €920</title>
+  </head>
+  <style>
+    :root {
+      --accent-color: #f66766;
+    }
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', sans-serif;
+      font-size: 16px;
+      color: #fff;
+      background: #1c1e2f url('images/background.svg');
+      background-repeat: repeat-y;
+      background-size: contain;
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    h1 {
+      margin: 0;
+    }
+    p {
+      margin: 0 0 20px 0;
+    }
+    ol,
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .title {
+      padding: 10px 0;
+      border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
+    }
+    .btn {
+      font-size: 18px;
+      box-shadow: 0 3px 0 0 #871628, 0 4px 4px 0 #000;
+      background-color: #b20119;
+      height: 30px;
+      padding: 0 30px;
+      letter-spacing: 1px;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 22px;
+      font-weight: 800;
+      border-radius: 50px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn:hover {
+      box-shadow: 0 3px 0 0 #871628, 0 4px 4px 0 #000, inset 0 15px 15px -3px hsla(0, 0%, 100%, 0.4);
+    }
+    .btn:active {
+      transform: translateY(3px);
+      box-shadow: inset 0 2px 0 0 #871628, inset 0 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    .header {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      padding: 10px 0;
+      background-color: rgba(37, 37, 54, 0.95);
+    }
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .btn-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .log-in {
+      font-size: 14px;
+      margin-right: 20px;
+      color: #fff;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+    .btn-header {
+      font-size: 14px;
+    }
+    .baner {
+      height: 380px;
+      background-image: url('images/baner-full.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    .baner__title {
+      background: linear-gradient(180deg, #ffee5b, #ffee5b 40%, #ffd303 45%, #f4b001 50%, #ffd303 55%, #ffee5b 60%, #ffee5b);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 42px;
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .navigation {
+      background-color: #1d1d2f;
+      background-image: url('images/nav-bg.svg');
+      border-bottom: 1px dotted #313047;
+    }
+    .menu__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .menu__item {
+      position: relative;
+      width: 25%;
+      margin-bottom: 0;
+    }
+    .menu__item::after {
+      content: '';
+      position: absolute;
+      top: 10.5px;
+      right: 0;
+      height: 32px;
+      width: 2px;
+      background-color: #313047;
+    }
+    .menu__item:last-child::after {
+      background-color: transparent;
+    }
+    .menu__link:hover {
+      background-color: hsla(0, 0%, 100%, 0.05);
+    }
+    .menu__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 800;
+      align-items: center;
+      height: 56px;
+      border-radius: 10px;
+    }
+    .menu__link-img {
+      margin-right: 10px;
+    }
+    .games__inner {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 15px;
+      margin: 40px 0;
+    }
+    .game {
+      height: 220px;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px 0 #000;
+    }
+    .game__img-wrapp {
+      width: 100%;
+      height: 77%;
+    }
+    .game__img {
+      min-height: 100%;
+      height: auto;
+      position: relative;
+      z-index: 2;
+      border-radius: 10px 10px 0 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      aspect-ratio: auto 232 / 174;
+    }
+    .game__name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 23%;
+      border: 1px solid #393a51;
+      border-top: none;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 0 5px;
+      background-color: #161626;
+      font-weight: 500;
+      font-size: 14px;
+      position: relative;
+      z-index: 2;
+    }
+    .game--hover {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 79%;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      box-sizing: border-box;
+      border-radius: 10px 10px 0 0;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .game:hover {
+      transform: scale(1.1);
+    }
+    .game:hover .game--hover {
+      opacity: 1;
+    }
+    .demo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 23px;
+      border-radius: 50px;
+      padding: 0 20px;
+      background-color: #313047;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .btn-game {
+      font-size: 12px;
+      width: 140px;
+      margin: 0 auto;
+      background-color: #4d5a85;
+      box-shadow: 0 3px 0 0 #2c3552, 0 4px 4px 0 #000;
+    }
+    .btn-game:hover {
+      box-shadow: 0 3px 0 0 #2c3552, 0 4px 4px 0 #000, inset 0 15px 15px -3px #fff6;
+    }
+    .about {
+      padding: 40px 0;
+    }
+    .about__inner {
+      border: 1px solid hsla(0, 0%, 100%, 0.15);
+      border-radius: 10px;
+      box-shadow: 0 8px 10px #000;
+      background-color: #262c46;
+      padding: 30px;
+    }
+    .about__title {
+      text-decoration: underline;
+      text-align: center;
+    }
+    .about__title-link {
+      color: #fff;
+    }
+    .btn-bonus {
+      padding: 25px;
+      width: 240px;
+      margin: 10px auto 40px;
+    }
+    .minus__box {
+      width: 50%;
+    }
+    .minus__list-item {
+      position: relative;
+      padding-left: 20px;
+    }
+    .accent-color {
+      color: var(--accent-color);
+    }
+    .footer {
+      background-color: #191921;
+      padding: 40px 0;
+    }
+    .footer__menu-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .footer__menu-link {
+      color: #fff;
+    }
+    .copyright {
+      text-align: center;
+    }
+    @media (max-width: 1025px) {
+      .games__inner {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    @media (max-width: 955px) {
+      body {
+        background-image: none;
+      }
+      .about__img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .menu__item {
+        width: 50%;
+      }
+      .menu__item:nth-child(2)::after {
+        display: none;
+      }
+      .menu__link {
+        justify-content: start;
+        padding: 0 10px;
+      }
+      .games__inner {
+        justify-content: space-around;
+      }
+    }
+    @media (max-width: 769px) {
+      .games__inner {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 650px) {
+      .header__inner {
+        justify-content: center;
+      }
+      .btn-box {
+        width: 100%;
+        border-top: 1px solid #363648;
+        padding-top: 10px;
+      }
+      .logo {
+        margin-bottom: 10px;
+      }
+      .menu__link {
+        font-size: 12px;
+        padding-left: 0;
+      }
+      .menu__link-img {
+        margin-right: 5px;
+      }
+      .menu__item::after {
+        right: 10px;
+      }
+    }
+    @media (max-width: 512px) {
+      .container {
+        padding: 0 10px;
+      }
+      .header {
+        background-color: #161626;
+      }
+      .log-in {
+        font-size: 13px;
+      }
+      .btn-header {
+        font-size: 12px;
+        padding: 0 20px;
+        letter-spacing: 0;
+      }
+      .baner {
+        margin-top: 100px;
+        height: 190px;
+      }
+      .baner__title {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        bottom: 0;
+      }
+      .menu__link--casino {
+        width: 42px;
+        height: 35px;
+      }
+      .menu__link--pay {
+        width: 42px;
+        height: 44px;
+      }
+      .menu__link--mobile {
+        width: 34px;
+        height: 40px;
+        margin-left: 4px;
+        margin-right: 10px;
+      }
+      .menu__link--bonus {
+        width: 42px;
+        height: 36px;
+      }
+      .games__inner {
+        margin: 20px 0 35px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .game {
+        height: 160px;
+      }
+      .game:nth-last-child(-n + 7) {
+        display: none;
+      }
+      .game__name {
+        font-size: 12px;
+      }
+      .about {
+        padding-bottom: 20px;
+      }
+      .about__inner {
+        padding: 20px 10px;
+      }
+      .btn-bonus {
+        font-size: 16px;
+      }
+      .footer__menu-list {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer__menu-item {
+        margin-bottom: 18px;
+      }
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="https://vavada.hr">
+            <img class="logo" src="images/logo.svg" alt="logo" width="200" height="31" loading="eager" />
+          </a>
+          <div class="btn-box">
+            <a class="log-in" href="go">Prijava</a>
+            <a class="btn btn-header" href="go">Registracija</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="baner">
+        <h1 class="baner__title">Vavada Casino</h1>
+      </section>
+      <div class="navigation">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#" style="color: #17eada">
+                  <img
+                    class="menu__link-img menu__link--casino"
+                    src="images/vavada-777.svg"
+                    width="62"
+                    height="35"
+                    loading="lazy"
+                    alt="vavada games"
+                  />
+                  Casino igre
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#" style="color: #e47658">
+                  <img
+                    class="menu__link-img menu__link--pay"
+                    src="images/vavada-payments.svg"
+                    width="54"
+                    height="44"
+                    loading="lazy"
+                    alt="vavada payments"
+                  />
+                  Načini plaćanja
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#" style="color: #6ef770">
+                  <img
+                    class="menu__link-img menu__link--mobile"
+                    src="images/vavada-mobile.svg"
+                    width="45"
+                    height="55"
+                    loading="lazy"
+                    alt="vavada mobile"
+                  />
+                  Mobilni casino
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#" style="color: #e8ce3a">
+                  <img
+                    class="menu__link-img menu__link--bonus"
+                    src="images/vavada-bonuses.svg"
+                    width="45"
+                    height="55"
+                    loading="lazy"
+                    alt="vavada bonuses"
+                  />
+                  Bonusi
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="games">
+        <div class="container">
+          <div class="games__inner">
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img
+                  class="game__img"
+                  src="images/the-dog-house.webp"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  alt="The Dog House"
+                />
+              </div>
+              <div class="game__name">The Dog House</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img
+                  class="game__img"
+                  src="images/zeus.webp"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  alt="Zeus vs Hades - Gods of War"
+                />
+              </div>
+              <div class="game__name">Zeus vs Hades - Gods of War</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img
+                  class="game__img"
+                  src="images/book-of-dead.webp"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  alt="Book of Dead"
+                />
+              </div>
+              <div class="game__name">Book of Dead</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img
+                  class="game__img"
+                  src="images/sweet-bonanza.webp"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  alt="Sweet Bonanza Xmas"
+                />
+              </div>
+              <div class="game__name">Sweet Bonanza Xmas</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img
+                  class="game__img"
+                  src="images/great-pigsby-megaways.webp"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  alt="Great Pigsby Megaways"
+                />
+              </div>
+              <div class="game__name">Great Pigsby Megaways</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img
+                  class="game__img"
+                  src="images/legacy-of-dead.webp"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  alt="Legacy of Dead"
+                />
+              </div>
+              <div class="game__name">Legacy of Dead</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img class="game__img" src="images/rich-wilde.webp" width="100%" height="100%" loading="lazy" alt="Rich Wilde" />
+              </div>
+              <div class="game__name">Rich Wilde and the Tome of Madness</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img
+                  class="game__img"
+                  src="images/Midas-Golden.webp"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  alt="Midas Golden Touch Christmas Edition"
+                />
+              </div>
+              <div class="game__name">Midas Golden Touch Christmas Edition</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img class="game__img" src="images/Mental.webp" width="100%" height="100%" loading="lazy" alt="Mental" />
+              </div>
+              <div class="game__name">Mental</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img
+                  class="game__img"
+                  src="images/Return-of-The.webp"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  alt="Return of The Green Knight"
+                />
+              </div>
+              <div class="game__name">Return of The Green Knight</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img class="game__img" src="images/Space-Wars.webp" width="100%" height="100%" loading="lazy" alt="Space Wars" />
+              </div>
+              <div class="game__name">Space Wars</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img
+                  class="game__img"
+                  src="images/Dead-or-Alive.webp"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  alt="Dead or Alive 2 Feature Buy"
+                />
+              </div>
+              <div class="game__name">Dead or Alive 2 Feature Buy</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img class="game__img" src="images/Road-Rage.webp" width="100%" height="100%" loading="lazy" alt="Road Rage" />
+              </div>
+              <div class="game__name">Road Rage</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img
+                  class="game__img"
+                  src="images/Royal-Xmass.webp"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                  alt="Royal Xmass 2"
+                />
+              </div>
+              <div class="game__name">Royal Xmass 2</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+            <div class="game">
+              <div class="game__img-wrapp">
+                <img class="game__img" src="images/Sugar-Rush.webp" width="100%" height="100%" loading="lazy" alt="Sugar Rush" />
+              </div>
+              <div class="game__name">Sugar Rush</div>
+              <div class="game--hover">
+                <a class="btn btn__game" href="go">Igrati</a>
+                <a class="demo" href="go">Demo</a>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-game" href="go">Sve igre</a>
+        </div>
+      </div>
+      <section class="about">
+        <div class="container">
+          <div class="about__inner">
+            <p>
+              Pozdravljamo vas na našim stranicama, gdje vam predstavljamo detaljan pregled Online Vavada Casino! Ova kockarnica
+              izvrsna je za ljubitelje zabave na sreću koji cijene kvalitetne igre, sigurne transakcije, velikodušne darove i
+              privatnost. Vaš interes za popularni casino u meniju je opravdan-ovo je izvrsna platforma za kockanje na mreži.
+            </p>
+            <p>
+              Vavada je licencirani internetski kasino registriran na Cipru. Uspješno funkcionira u svijetu kockanja više od pet
+              godina. Tim Vavada okuplja iskusne stručnjake s opsežnim znanjem kako bi se osigurala visoka razina usluge.
+            </p>
+            <p>
+              Online Casino Vavada nudi širok izbor zabave u obliku desktop, kartaških igara, kao i mjesta i live casino,
+              razvijena od strane vodećih svjetskih tvrtki u području iGaming, kao što su: Pragmatic, Play'n Go, Microgaming,
+              Hacksaw i ostale.
+            </p>
+            <p>
+              Dizajn stranice je atraktivan i jednostavan za korištenje. Tim Vavada oduševljava svoje posjetitelje ugodnim
+              bonusima, što vam omogućuje dodatno uživanje u igri. Važno je napomenuti da ovaj casino ne nudi mogućnost sportskog
+              klađenja-za to ćete se morati obratiti drugoj platformi!
+            </p>
+            <h2 class="title">Kako se pridružiti kockarnicama Vavada?</h2>
+            <p>
+              Jeste li donijeli odluku da se registrirate u Vavada Casino? To je sjajna vijest! Prijava je jednostavan postupak
+              koji vam neće oduzeti puno vremena.
+            </p>
+            <p>Evo 8 koraka kroz koje ćete postati klijent kasina Bucket i dobiti bonus dobrodošlice:</p>
+            <ol>
+              <li>
+                <b>Prije svega, morate "dobiti bonus"</b> - da biste to učinili, kliknite na istoimeni gumb i idite na skrivenu
+                vezu do stranice kasina Vavada. Budući da se radi o inozemnom kasinu Vavada, pristupima se može pristupiti putem
+                "zrcalne" veze koja je skrivena. Takvu vezu možete pronaći na našim stranicama.
+              </li>
+              <li>
+                <b>Registrirajte se</b> - trebat će vam samo nekoliko minuta da postanete kupac za korisnike Vavada Casino!
+                Jednostavno unesite svoj NBC ili telefonski broj, postavite lozinku, odaberite valutu i pristanite na pravila
+                tvrtke.
+              </li>
+              <li>
+                <b>Potvrdite svoj e-mail</b> - primit ćete poruku s vezom za potvrdu na navedenu adresu e - pošte ili telefonski
+                broj. Kliknite vezu da biste dovršili postupak registracije.
+              </li>
+              <li>
+                <b>Napravite svojih prvih 100 besplatnih okretaja</b> - Vavada nudi jedinstveni bonus bez depozita: $0.20 za svaki
+                od besplatnih okretaja na utoru A-liste.
+              </li>
+              <li>
+                <b>Ispunite upitnik s osobnim podacima na svom računu</b> - to ne mora biti učinjeno odmah. Dovoljno je navesti
+                ime, rođendan i broj po kojem se možete identificirati, kao i adresu za dodatne informacije. Osobni podaci mogu
+                ostati anonimni dulje vrijeme.
+              </li>
+              <li>
+                <b>Provjerite na platformi</b> - dokaz o identitetu nije potreban na Vavada, ali ako želite, možete dostaviti
+                dokumente koji dokazuju vaš identitet.
+              </li>
+              <li>
+                <b>Stavite svoj prvi novac na račun</b> - možete odabrati prikladan način plaćanja i uplatiti prvi depozit
+                čitajući uvjete bonusa dobrodošlice.
+              </li>
+              <li>
+                <b>Uzmite svoj bonus za registraciju i uplatu prvog pologa</b> - nakon prvog pologa, novi kupci dobivaju bonus od
+                100% u iznosu do $1000.
+              </li>
+            </ol>
+            <h2 class="title">Sigurnost u Vavada</h2>
+            <p>
+              Brend Vavada je prvi put ušao u online prostor u 2017-u, što ukazuje na više od pet godina iskustva u pružanju
+              usluga u online kockanju. Online Casino pod upravom " Vavada B.V.” registriran je na Cipru. Većina popularnih i
+              uspješnih kockarnica registrirana je na Malti ili Cipru, jer tamo je najpovoljnije zakonodavstvo za kockarnice.
+            </p>
+            <p>
+              Offshore kockarnice, uključujući i one u Vavada, često dobivaju licence u curacau. Curacao Komisija osigurava
+              sigurnost, čime se igrači oslobađaju brige o mogućim prijevarnim shemama.
+            </p>
+            <p>Virtualni svijet zasićen je pozitivnim kritikama o Vavada Casino, što dodatno potvrđuje njegovu pouzdanost.</p>
+            <h3>"Zrcalna" veza-što je to i zašto je potrebna?</h3>
+            <p>
+              Pristup Vavada i drugim međunarodnim internetskim kockarnicama nije uvijek lak. Za zaobilaženje ovog problema
+              koriste se "zrcalne" veze koje predstavljaju alternativni ulaz. Na primjer, veza – "ogledalo" za Vavada može
+              izgledati ovako: " Vavada321". Važno je razumjeti da se te veze mogu mijenjati, pa ono što je prije radilo možda
+              sada nije aktivno. Pružamo aktualna "ogledala" za vašu udobnost.
+            </p>
+            <h2 class="title">Bonusi u Vavada Casino</h2>
+            <p>
+              Bonusi u kasinu sastavni su dio zabave na sreću. Mogućnost igranja besplatnih utora i osvajanja pravog novca
+              atraktivna je ponuda koju ne smijete propustiti. Ako usporedimo druga igrališta s onima iz Vavada, primijetit ćete
+              da je bonus sustav Vavada ne samo dobro osmišljen, već i Velikodušan!
+            </p>
+            <p>
+              Casino Vavada oduševljava i nove kupce i redovite igrače. Ima sve: besplatne okretaje, povrat novca, turnire na
+              slotovima, bonuse za pripisana sredstva i bonuse neovisne o depozitu.
+            </p>
+            <p>
+              Svi besplatni bonusi i druge sjajne ponude u Vavada Casino dostupni su samo registriranim igračima. Unatoč tome,
+              postupak registracije traje samo minutu. Odmah nakon registracije, novi igrači mogu dobiti svoje darove. Pogledajmo
+              pobliže velikodušni bonus dobrodošlice i program vjernosti Vavada.
+            </p>
+            <h3>Besplatne rotacije bez polaganja sredstava</h3>
+            <p>
+              Ovaj bonus u Vavada Casino namijenjen je novim korisnicima i pravi je "hit". 100 besplatnih okretaja bez potrebe za
+              uplatom sredstava, dostupno je na stroju od pa do Pa. Bonus se dodjeljuje apsolutno svim novim igračima i aktivira
+              se u profilu. Zatim možete prijeći na utor za Buck i napraviti 100 okretaja po cijeni od $ 0.20. Možda ćete moći
+              osvojiti maksimalnu nagradu ovog utora od 20.
+            </p>
+            <p>
+              Naravno, dobivanje 100 besplatnih okretaja bez depozita lijepa je ponuda, ali vrijedi razmotriti zahtjeve za
+              klađenje. Dobitak dobiven korištenjem besplatnih okretaja mora se odigrati najmanje 20 puta, tek nakon toga možete
+              povući novac s računa.
+            </p>
+            <h3>Bonus u iznosu od 100% na prvi uplaćeni depozit</h3>
+            <p>
+              Nakon što uživate u Besplatnim okretajima bez pologa, vrijeme je za sljedeće ugodno iznenađenje – 100% bonus na
+              predujam do $1000. Registrirani korisnici mogu staviti prvi novac na svoj račun i Vavada će ih udvostručiti, pod
+              uvjetom da iznos neće biti veći od $1,000. Ako ne računate na tako veliki bonus, tada možete uplatiti manji iznos,
+              na primjer, $100. Ovaj bonus također podliježe uvjetima i mora se odigrati 35 puta.
+            </p>
+            <h3>Program vjernosti u Vavada Casino</h3>
+            <p>
+              U kasinu Vavada meniju postoji program koji je namijenjen nagrađivanju igrača za njihovu aktivnost i lojalnost. Vaša
+              razina je izravno povezana s time koliko ste aktivni i koliko zarađujete. Što je vaš prihod veći, to je viša razina,
+              a to zauzvrat otvara pristup poboljšanim bonusima i pogodnostima.
+            </p>
+            <p>Program Casino uključuje 6 razina:</p>
+            <ol>
+              <li>Novak: svi novi kupci automatski postaju članovi programa vjernosti na razini "Novak".</li>
+              <li>Igrač: Kladite se u iznosu od $15 da biste dosegli razinu "igrač".</li>
+              <li>Bronca: nakon što vaš promet premaši $250, bit ćete prebačeni u kategoriju "Bronca".</li>
+              <li>Srebro: da biste postigli razinu "srebra", morate izvršiti promet od najmanje $4000.</li>
+              <li>Zlato: razina "Zlata" postiže se prometom od $8000.</li>
+              <li>Platina: ova razina je vrhunac i daje se igračima koji su postigli promet od $50 000.</li>
+            </ol>
+            <p>
+              Svaka razina otključava nove pogodnosti i bonuse, čineći igranje kasina Vavada još uzbudljivijim i isplativijim za
+              vjerne kupce.
+            </p>
+            <h2 class="title">Glavne prednosti VIP-programa Vavada</h2>
+            <p>VIP - program Vavada pruža igračima brojne pogodnosti, čineći iskustvo igranja još ugodnijim:</p>
+            <ul>
+              <li>
+                Povrat novca od 10%: Svi članovi programa u Mje EČNOM programu dobivaju 10% povrata novca od izgubljenih
+                sredstava. To igračima daje dio svojih gubitaka i dodatni je poticaj;
+              </li>
+              <li>
+                Razni bonusi i ponude: odani igrači mogu uživati u raznim bonusima i posebnim ponudama, uključujući vrtnje bez
+                plaćanja, kao i bonuse u kasinu i druge pogodnosti. To čini igranje u Vavada još uzbudljivijim.
+              </li>
+            </ul>
+            <h2 class="title">Načini polaganja sredstava i njihovog povlačenja</h2>
+            <p>
+              Načini plaćanja u Vavada Casino praktičnost za igrače, pružajući više od 15 različitih pristupa za polaganje i
+              povlačenje sredstava:
+            </p>
+            <ul>
+              <li><b>Karte:</b> VISA, Mastercard;</li>
+              <li><b>E-novčanici:</b> Skrill, Neteller, Jeton, Piastrix, MuchBetter;</li>
+              <li><b>Kripto valute:</b> Bitcoin,Ethereum, USDT, Binancei još mnogo toga.</li>
+            </ul>
+            <p>
+              Za kartice i novčanike minimalni depozit je $1, a minimalni iznos za povlačenje je $20. Za povlačenje kriptovaluta,
+              kasino je postavio ograničenje od 50 dolara. Povlačenje je također moguće s minimalnim iznosom od $20. Casino Vavada
+              brzo obrađuje zahtjeve, osiguravajući prijenos sredstava u roku od jednog dana. To osigurava da novac igrača brzo
+              dođe na njegov račun.
+            </p>
+            <h3>Igrački Arsenal Vavada</h3>
+            <p>
+              Glavna prednost Vavada – a je široka kolekcija igara s više od 4000 igara. Ako ste odlučili pokušati igrati 1 igru
+              dnevno, tada bi vam trebalo 10 godina da prođete sve igre. I nevjerojatno je da se svaki dan taj repertoar samo
+              povećava. Više od 50 vodećih programera igara naporno radi na pružanju 4000+ jedinstvenih igara u Vavada Casino.
+              Među njima možete uočiti divove kao što su: Evolution Gaming, Pragmatic Play, Hacksaw Gaming, Netent i još mnogo
+              toga.
+            </p>
+            <p>Pogledajmo pobliže što su igre na automatima u live casinu u svijetu Vavada:</p>
+            <ul>
+              <li>
+                <b>Slotovi:</b> Vavada donjem dijelu nudi bogat izbor utora različitih pružatelja usluga. Počevši od fascinantnih
+                video utora do klasičnih automata. Ovdje će svaki igrač pronaći nešto po svom ukusu. Nevjerojatne teme, uzbudljive
+                bonus Runde i impresivna grafika čine iskustvo igranja jedinstvenim;
+              </li>
+              <li>
+                <b>Casino Uživo:</b> za one koji više vole atmosferu pravog kasina, the menace nudi razne igre u formatu Vavada.
+                Rulet, blackjack, Baccarat i druge igre s pravim trgovcima stvaraju autentičan kasino. Nezaboravna atmosfera u
+                coupeu, koristeći naprednu tehnologiju vrhunskih programera kao što su Achands, omogućuje igračima da uživaju u
+                visokokvalitetnom streamu u stvarnom vremenu. Casino Vavada liste nastoji zadovoljiti i najzahtjevnije igrače
+                pružajući brojne mogućnosti za uzbudljivo i raznoliko igračko iskustvo;
+              </li>
+              <li>
+                <b>Automati:</b> naravno, mnoge od 4000 + casino igara su, naravno, automati. Ove igre na sreću posebna su
+                omiljena zabava širom svijeta. Teško je zamisliti osobu koja barem jednom nije okušala sreću u automatima, bilo u
+                pravom kasinu ili na mreži.
+              </li>
+            </ul>
+            <p>
+              Automati pružaju uzbudljivo igračko iskustvo: trenutak kada se dvije knjige pojave na bubnjevima, a sljedeći
+              trenutak na četvrtom se pojavi treća, ispunjava krv uzbuđenjem. Također imajte na umu da slotovi pružaju priliku za
+              osvajanje iznosa višestruko većeg od vaše početne oklade. Zamislite da ste pogodili veliki jackpot na leđima, za
+              koji ste dali samo 0,20 dolara! Međutim, važno je zapamtiti da uvijek postoji rizik od gubitka novca i suočavanja s
+              problemom kockanja. Priče o tome kako je kockanje dovelo do ozbiljnih problema poznate su svima. Stoga je potrebno
+              igrati pažljivo i odgovorno pristupiti pitanju očuvanja svojih financija!
+            </p>
+            <p>
+              Poznato je da je više od 40 tvrtki koje razvijaju slotove prepoznalo kockarnice Vavada svoj dom i ponose se time.
+              Među tih divova - EGT, Hacksaw Gaming, Thunderkick, Pragmatic, Push Gaming, ELK, Quickspin, Relax, Play'n Go,
+              Microgaming, iSoftbet, Netent, Nolimit City, Playson и Playtech. Sve su to prepoznatljive tvrtke koje pružaju
+              raznolike i zabavne igre.
+            </p>
+            <p>
+              Neke od naših omiljenih mjesta uključuju Gates of Olympus, Razor Shark, Sweet Bonanza, Book of Dead, The Dog House,
+              Money Train, Big Bass Bonanza, Divine Fortune i Starlight Princess. Ali to je samo mali dio moćnog arsenala
+              predstavljenog u kasinu!
+            </p>
+            <h3>Casino uživo</h3>
+            <p>
+              Igrati rulet, poker, blackjack i Baccarat s pravim djeliteljem bez napuštanja svoje kuće? Sada to nije fantazija,
+              već stvarnost u kasinu uživo! Pojava kockarnica uživo postala je jedan od glavnih razloga zašto tradicionalna
+              kockarnica ustupaju mjesto internetskim kockarnicama. Zašto gubiti vrijeme na putovanje u kasino kad je sve
+              uzbuđenje dostupno na vašem računalu ili pametnom telefonu? Možete igrati bilo gdje i u bilo koje doba dana.
+            </p>
+            <p>
+              Live-Casino Vavada radi na platformi petero divovi industrije: Playtech, Pragmatic Play, Betgames TV, Vivo, Gaming i
+              Evolution Gaming. Vjerojatno već znate ove davatelje usluga. Ove tvrtke s a-listom pružaju kupcima a-list Vavada
+              Casino raspon mogućnosti za uzbudljivo i raznoliko igračko iskustvo. Korištenjem napredne tehnologije kao što su
+              emisije uživo i profesionalni trgovci, igrači mogu uživati u atmosferi sadašnjosti.
+            </p>
+            <h2 class="title">Mobilni Vavada Casino</h2>
+            <p>
+              Danas gotovo svi posjeduju mobilne pametne telefone. Imajući to na umu, Vavada je poduzeo mjere i u potpunosti
+              optimizirao svoju stranicu za kockanje, čineći je što prikladnijom za korisnike mobilnih uređaja. Ako više volite
+              ući u kasino s telefona, Vavada Casino pruža jednostavan i praktičan pristup. Zahvaljujući tome možete uživati u
+              casino igrama s mobilnog uređaja bilo gdje. Na primjer, možete igrati slotove ili uživati u atmosferi kasina uživo
+              čak i dok putujete. Mnogi online kockarnice stvaraju namjenske mobilne aplikacije, dok Vavada nudi mobilnu verziju
+              stranice koja također pruža praktičnost i pristupačnost igračima.
+            </p>
+            <h2 class="title">Podrška</h2>
+            <p>
+              Vavada pruža učinkovitu korisničku podršku svojim klijentima, gdje svatko može dobiti pomoć u slučaju pitanja ili
+              problema. Prije svega, preporuča se posjetiti odjeljak "CHZV" (često postavljana pitanja), gdje se prikupljaju
+              najvažnija pitanja kupaca. Ovaj odjeljak može sadržavati korisne informacije i prijedloge o raznim temama kao što su
+              isplate, bonusi i drugi aspekti korištenja kasina.
+            </p>
+            <p>
+              Ako odgovor na vaše pitanje nije pronađen, možete se obratiti podršci. Vavada pruža dva glavna načina komunikacije:
+            </p>
+            <ol>
+              <li>
+                E-pošta: možete pisati na adresu support[at]vavada.net. očekujte odgovor neko vrijeme, obično podrška pokušava
+                brzo odgovoriti.
+              </li>
+              <li>
+                Online Chat: Chat je dostupan izravno na mreži na mreži Vavada. Ovo je brži način da dobijete odgovor na svoje
+                pitanje.
+              </li>
+            </ol>
+            <h2 class="title">Funkcionalnost i dizajn internetskog kasina</h2>
+            <p>
+              Stranica Vavada je jednostavno i elegantno sučelje. Intuitivna navigacija pomaže korisnicima da se brzo kreću i
+              pronađu potrebne informacije. Glavni odjeljci kao što su igre, podrška i promocije lako su dostupni s gornjeg
+              izbornika, a na dnu stranice nalaze se dodatni odjeljci, uključujući korisne poveznice.
+            </p>
+            <p>
+              Stranica je lako dostupna na više jezika, što omogućuje jednostavnu upotrebu za igrače iz različitih zemalja. Glavna
+              stranica sadrži glavne kategorije: slotovi, kasino, turniri i stolne igre. To čini proces pronalaženja omiljenih
+              igara jednostavnim i brzim.
+            </p>
+            <h2 class="title">Zaključak</h2>
+            <p>
+              Preporučamo Vavada Casino provjerenu platformu za uživanje u zabavi koja pruža širok spektar usluga za kockare. Ovo
+              je kasino s izvrsnim bonusima, raznolikim izborom igara i korisničkim sučeljem. Ovdje možete steći dobro igračko
+              iskustvo. Međutim, pri odabiru kasina uvijek je važno zapamtiti vlastite sklonosti i obratiti pažnju na sigurnost
+              igre.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="https://vavada.hr">Vavada</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Bonusi</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Casino igre</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Načini plaćanja</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Mobilni casino</a></li>
+            </ul>
+          </nav>
+          <div class="copyright">© vavada.hr - sva prava pridržana</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
